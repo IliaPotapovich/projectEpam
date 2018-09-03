@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd12f6a4-2a5d-4da4-885a-331e87437edd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/dbnavigator.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../data/picture.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../data/text.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../eproject.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../resources/log4j2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/Command.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/CommandFactory.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/CommandType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/EmptyCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/EnterInTechnicalRoomCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/LanguageCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/LogoutCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/TechnicalLoginCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindCarByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindCarByOwnerCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindDriverByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindDriverByNameCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfActiveTripsCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfAdminNameCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfDeletedCarsCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfDeletedDriversCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfFinishedTripsCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfTaxiCarCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfTaxiDriversCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfTripsCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindListOfUsersCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindTaxiByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindTripByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindUserByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/find/FindUserByLoginCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/lock/ChangeDriverLockStatusCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/lock/ChangeUserLockStatusCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/lock/DeleteCarByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/lock/DeleteDriverByIdCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/lock/DeletePreviousSiteDesign.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/registration/AdminRegCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/registration/ChangeAdminPasswordCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/registration/TaxiCarRegCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/admin/registration/TaxiDriverRegCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/taxi/ChangeDriverPasswordCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/taxi/DownloadAvatarCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/taxi/DriverChoosesCarCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/taxi/FindHistoryOfDriverTripsCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/taxi/FinishWorkCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/common/ShowListOfWorkingTaxiCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/common/order/ChooseAnotherTaxiCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/common/order/ConfirmTripCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/common/order/EvaluateTaxiWorkCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/common/order/TripEndCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/login/EnterInUserRoomCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/login/UserLoginCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/login/UserRegistrCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/order/ChooseTaxiForRegCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/order/FindAppropListForRegCustomerCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/room/ChangeUserPasswordCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/customer/room/FindHistoryOfUserTripsCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/guest/order/ChooseCertainTaxiCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/guest/order/FindListOfAppropriateTaxiCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/command/user/guest/order/QuickOrderTaxiCommand.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/constant/Constant.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/controller/AvatarDownloader.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/controller/Controller.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/controller/FileDownloadingServlet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/AdminDaoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/CustomerDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/CustomerDaoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/TaxiCarDaoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/TaxiDaoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/TaxiDriverDaoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/dao/TripDaoImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Admin.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Customer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Distance.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Point.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Route.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Router.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Taxi.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/TaxiCar.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/TaxiDriver.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/entity/Trip.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/exception/CommandException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/exception/DaoException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/exception/LogicException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/listener/SessionAttributeListener.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/localization/MessageManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/AdminService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/DateConvert.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/IdGenerator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/TaxiService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/TripService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/UserService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/comparator/CompareDistance.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/comparator/SortData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/specification/FindApropriateTaxi.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/specification/Specification.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/logic/specification/TaxiQuery.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/pool/ConnectionPool.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/pool/DataBaseConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/java/com/potapovich/project/pool/ProxyConnection.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/configuration.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/label.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/label_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/label_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/label_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/messages.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/messages_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/messages_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/resources/messages_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/sql/taxi_database.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/configuration.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/label.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/label_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/label_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/label_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/messages.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/messages_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/messages_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/messages_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/classes/properties/url.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/log4j2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/index.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/about_company.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/admin_register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/admin_start_page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/archives.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/change_admin_password.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/change_driver_password.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/change_user_password.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/confirm_trip_end.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/deleted_cars.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/deleted_drivers.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/end_trip.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/errorpage.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/fileupload.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/find_car.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/find_car_by_id.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/find_driver.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/find_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/find_trips.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/find_user.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/footer.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/header.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_admins.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_appropriate_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_appropriate_taxi_for_reg.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_car.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_driver_trips.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_drivers.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_user_trips.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_users.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/list_of_working_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/login.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/main.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/order_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/order_taxi_by_registered_user.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/order_with_taxi_choose.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/quick_order.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/quick_order_calculation.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/quick_order_calculation_with_calc.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/registerpage.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/site_design.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/start_page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/start_page_header.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/taxi_car_register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/taxi_driver_register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/taxi_find.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/taxi_start_page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/taxiroom.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/technicaloffice.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/trip_calculation.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/trip_calculation_for_reg.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/trip_find.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/user_find.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../src/main/webapp/jsp/userroom.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/Command.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/CommandFactory.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/CommandType.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/EmptyCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/EnterInTechnicalRoomCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/LanguageCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/LogoutCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/TechnicalLoginCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindCarByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindCarByOwnerCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindDriverByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindDriverByNameCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfActiveTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfAdminNameCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfDeletedCarsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfDeletedDriversCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfFinishedTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfTaxiCarCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfTaxiDriversCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindListOfUsersCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindTaxiByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindTripByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindUserByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/find/FindUserByLoginCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/lock/ChangeDriverLockStatusCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/lock/ChangeUserLockStatusCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/lock/DeleteCarByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/lock/DeleteDriverByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/lock/DeletePreviousSiteDesign.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/registration/AdminRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/registration/ChangeAdminPasswordCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/registration/TaxiCarRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/admin/registration/TaxiDriverRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/taxi/ChangeDriverPasswordCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/taxi/DownloadAvatarCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/taxi/DriverChoosesCarCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/taxi/FindHistoryOfDriverTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/taxi/FinishWorkCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/common/ShowListOfWorkingTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/common/order/ChooseAnotherTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/common/order/ConfirmTripCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/common/order/EvaluateTaxiWorkCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/common/order/TripEndCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/login/EnterInUserRoomCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/login/UserLoginCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/login/UserRegistrCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/order/ChooseTaxiForRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/order/FindAppropListForRegCustomerCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/room/ChangeUserPasswordCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/customer/room/FindHistoryOfUserTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/guest/order/ChooseCertainTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/guest/order/FindListOfAppropriateTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/command/user/guest/order/QuickOrderTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/constant/Constant.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/controller/AvatarDownloader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/controller/Controller.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/controller/FileDownloadingServlet.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/AdminDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/CustomerDao.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/CustomerDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/TaxiCarDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/TaxiDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/TaxiDriverDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/dao/TripDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Admin.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Customer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Distance.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Point.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Route.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Router.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Taxi.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/TaxiCar.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/TaxiDriver.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/entity/Trip.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/exception/CommandException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/exception/DaoException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/exception/LogicException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/listener/SessionAttributeListener.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/localization/MessageManager.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/AdminService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/DateConvert.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/IdGenerator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/TaxiService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/TripService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/UserService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/comparator/CompareDistance.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/comparator/SortData.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/specification/FindApropriateTaxi.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/specification/Specification.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/logic/specification/TaxiQuery.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/pool/ConnectionPool.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/pool/DataBaseConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/com/potapovich/project/pool/ProxyConnection.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/configuration.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/label.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/label_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/label_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/label_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/messages.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/messages_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/messages_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/classes/messages_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT.war" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/Command.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/CommandFactory.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/CommandType.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/EmptyCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/EnterInTechnicalRoomCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/LanguageCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/LogoutCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/TechnicalLoginCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindCarByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindCarByOwnerCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindDriverByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindDriverByNameCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfActiveTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfAdminNameCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfDeletedCarsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfDeletedDriversCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfFinishedTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfTaxiCarCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfTaxiDriversCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindListOfUsersCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindTaxiByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindTripByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindUserByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/find/FindUserByLoginCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/lock/ChangeDriverLockStatusCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/lock/ChangeUserLockStatusCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/lock/DeleteCarByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/lock/DeleteDriverByIdCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/lock/DeletePreviousSiteDesign.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/registration/AdminRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/registration/ChangeAdminPasswordCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/registration/TaxiCarRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/admin/registration/TaxiDriverRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/taxi/ChangeDriverPasswordCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/taxi/DownloadAvatarCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/taxi/DriverChoosesCarCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/taxi/FindHistoryOfDriverTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/taxi/FinishWorkCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/common/ShowListOfWorkingTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/common/order/ChooseAnotherTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/common/order/ConfirmTripCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/common/order/EvaluateTaxiWorkCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/common/order/TripEndCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/login/EnterInUserRoomCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/login/UserLoginCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/login/UserRegistrCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/order/ChooseTaxiForRegCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/order/FindAppropListForRegCustomerCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/room/ChangeUserPasswordCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/customer/room/FindHistoryOfUserTripsCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/guest/order/ChooseCertainTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/guest/order/FindListOfAppropriateTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/command/user/guest/order/QuickOrderTaxiCommand.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/constant/Constant.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/controller/AvatarDownloader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/controller/Controller.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/controller/FileDownloadingServlet.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/AdminDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/CustomerDao.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/CustomerDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/TaxiCarDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/TaxiDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/TaxiDriverDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/dao/TripDaoImpl.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Admin.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Customer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Distance.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Point.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Route.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Router.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Taxi.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/TaxiCar.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/TaxiDriver.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/entity/Trip.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/exception/CommandException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/exception/DaoException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/exception/LogicException.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/listener/Observed.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/listener/Observer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/listener/SessionAttributeListener.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/localization/MessageManager.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/AdminService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/DateConvert.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/IdGenerator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/TaxiService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/TripService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/UserService.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/comparator/CompareDistance.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/comparator/SortData.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/specification/FindApropriateTaxi.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/specification/Specification.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/logic/specification/TaxiQuery.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/pool/ConnectionPool.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/pool/DataBaseConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/com/potapovich/project/pool/ProxyConnection.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/configuration.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/label.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/label_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/label_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/label_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/messages.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/messages_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/messages_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/messages_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/configuration.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/label.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/label_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/label_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/label_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/messages.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/messages_be_BY.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/messages_en_US.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/messages_ru_RU.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/classes/properties/url.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.4.1.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.4.1.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.11.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-2.6.0.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/lib/standard-1.1.2.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/log4j2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/index.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/about_company.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/admin_register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/admin_start_page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/archives.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/change_admin_password.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/change_driver_password.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/change_user_password.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/confirm_trip_end.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/deleted_cars.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/deleted_drivers.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/end_trip.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/errorpage.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/fileupload.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/find_car.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/find_car_by_id.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/find_driver.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/find_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/find_trips.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/find_user.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/footer.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/header.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_admins.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_appropriate_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_appropriate_taxi_for_reg.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_car.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_driver_trips.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_drivers.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_user_trips.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_users.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/list_of_working_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/login.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/main.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/order_taxi.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/order_taxi_by_registered_user.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/order_with_taxi_choose.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/quick_order.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/quick_order_calculation.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/quick_order_calculation_with_calc.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/registerpage.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/site_design.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/start_page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/start_page_header.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/taxi_car_register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/taxi_driver_register.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/taxi_find.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/taxi_start_page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/taxiroom.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/technicaloffice.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/trip_calculation.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/trip_calculation_for_reg.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/trip_find.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/user_find.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/e-project-1.0-SNAPSHOT/jsp/userroom.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/maven-archiver/pom.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1400" />
+    <option name="height" value="992" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Accessibility</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android &gt; Lint &gt; Accessibility</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="e-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projectEpam\eproject" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd12f6a4-2a5d-4da4-885a-331e87437edd" name="Default" comment="" />
+      <created>1535971166559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535971166559</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
