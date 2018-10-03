@@ -1,8 +1,27 @@
 package com.potapovich.project.command;
 
-import com.potapovich.project.command.admin.find.*;
-import com.potapovich.project.command.admin.lock.*;
-import com.potapovich.project.command.admin.registration.*;
+import com.potapovich.project.command.admin.find.admin.FindListOfAdminNameCommand;
+import com.potapovich.project.command.admin.find.car.FindCarByIdCommand;
+import com.potapovich.project.command.admin.find.car.FindCarByOwnerCommand;
+import com.potapovich.project.command.admin.find.car.FindListOfDeletedCarsCommand;
+import com.potapovich.project.command.admin.find.car.FindListOfTaxiCarCommand;
+import com.potapovich.project.command.admin.find.driver.FindDriverByIdCommand;
+import com.potapovich.project.command.admin.find.driver.FindDriverByNameCommand;
+import com.potapovich.project.command.admin.find.driver.FindListOfDeletedDriversCommand;
+import com.potapovich.project.command.admin.find.driver.FindListOfTaxiDriversCommand;
+import com.potapovich.project.command.admin.find.taxi.FindTaxiByIdCommand;
+import com.potapovich.project.command.admin.find.trip.FindListOfActiveTripsCommand;
+import com.potapovich.project.command.admin.find.trip.FindListOfFinishedTripsCommand;
+import com.potapovich.project.command.admin.find.trip.FindListOfTripsCommand;
+import com.potapovich.project.command.admin.find.trip.FindTripByIdCommand;
+import com.potapovich.project.command.admin.find.user.FindListOfUsersCommand;
+import com.potapovich.project.command.admin.find.user.FindUserByIdCommand;
+import com.potapovich.project.command.admin.find.user.FindUserByLoginCommand;
+import com.potapovich.project.command.admin.restriction.*;
+import com.potapovich.project.command.admin.registration.AdminRegCommand;
+import com.potapovich.project.command.admin.registration.ChangeAdminPasswordCommand;
+import com.potapovich.project.command.admin.registration.TaxiCarRegCommand;
+import com.potapovich.project.command.admin.registration.TaxiDriverRegCommand;
 import com.potapovich.project.command.taxi.*;
 import com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand;
 import com.potapovich.project.command.user.common.order.ChooseAnotherTaxiCommand;
@@ -14,19 +33,22 @@ import com.potapovich.project.command.user.customer.login.UserLoginCommand;
 import com.potapovich.project.command.user.customer.login.UserRegistrCommand;
 import com.potapovich.project.command.user.customer.order.ChooseTaxiForRegCommand;
 import com.potapovich.project.command.user.customer.order.FindAppropListForRegCustomerCommand;
+import com.potapovich.project.command.user.customer.room.ChangeUserPasswordCommand;
 import com.potapovich.project.command.user.customer.room.FindHistoryOfUserTripsCommand;
 import com.potapovich.project.command.user.guest.order.ChooseCertainTaxiCommand;
 import com.potapovich.project.command.user.guest.order.FindListOfAppropriateTaxiCommand;
 import com.potapovich.project.command.user.guest.order.QuickOrderTaxiCommand;
-import com.potapovich.project.command.user.customer.room.ChangeUserPasswordCommand;
 import com.potapovich.project.logic.AdminService;
 import com.potapovich.project.logic.TaxiService;
 import com.potapovich.project.logic.TripService;
 import com.potapovich.project.logic.UserService;
 
 public enum CommandType {
-
+    /**
+     * List of Commands
+     */
     LOGIN(new UserLoginCommand(new UserService())),
+    FORWARD(new ForwardCommand()),
     ENTER_IN_USER_ROOM(new EnterInUserRoomCommand(new UserService())),
     LOGOUT(new LogoutCommand()),
     SET_LANGUAGE(new LanguageCommand()),
@@ -45,7 +67,7 @@ public enum CommandType {
     FIND_LIST_OF_CARS(new FindListOfTaxiCarCommand(new TaxiService())),
     SHOW_LIST_OF_WORKING_TAXI(new ShowListOfWorkingTaxiCommand(new TaxiService())),
     FINISH_WORK_DAY(new FinishWorkCommand(new TaxiService())),
-    FIND_LIST_OF_APPROPRIATE_TAXI(new FindListOfAppropriateTaxiCommand(new TaxiService(),new UserService())),
+    FIND_LIST_OF_APPROPRIATE_TAXI(new FindListOfAppropriateTaxiCommand(new TaxiService(), new UserService())),
     CHOOSE_TAXI(new ChooseCertainTaxiCommand(new TaxiService())),
     CONFIRM_TRIP(new ConfirmTripCommand(new TripService())),
     EVALUATE_TAXI_WORK(new EvaluateTaxiWorkCommand()),
@@ -65,7 +87,7 @@ public enum CommandType {
     DELETE_DRIVER_BY_ID(new DeleteDriverByIdCommand(new TaxiService())),
     DELETE_CAR_BY_ID(new DeleteCarByIdCommand(new TaxiService())),
     FIND_HISTORY_OF_USERS_TRIPS(new FindHistoryOfUserTripsCommand(new TripService())),
-    FIND_HISTORY_OF_DRIVER_TRIPS(new FindHistoryOfDriverTripsCommand(new TripService(), new TaxiService())),
+    FIND_HISTORY_OF_DRIVER_TRIPS(new FindHistoryOfDriverTripsCommand(new TripService())),
     FIND_LIST_OF_TRIPS(new FindListOfTripsCommand(new TripService())),
     FIND_LIST_OF_ACTIVE_TRIPS(new FindListOfActiveTripsCommand(new TripService())),
     FIND_LIST_OF_FINISHED_TRIPS(new FindListOfFinishedTripsCommand(new TripService())),
@@ -74,11 +96,9 @@ public enum CommandType {
     DOWNLOAD_AVATAR(new DownloadAvatarCommand(new TaxiService())),
     FIND_LIST_OF_DELETED_DRIVERS(new FindListOfDeletedDriversCommand(new TaxiService())),
     FIND_LIST_OF_DELETED_CARS(new FindListOfDeletedCarsCommand(new TaxiService())),
-    ENTER_IN_TECHNICAL_ROOM(new EnterInTechnicalRoomCommand(new TaxiService(), new AdminService())),
-    DELETE_PREVIOUS_DESIGN(new DeletePreviousSiteDesign());
-
-
-
+    ENTER_IN_TECHNICAL_ROOM(new EnterInTechnicalRoomCommand()),
+    DELETE_PREVIOUS_DESIGN(new DeletePreviousSiteDesign()),
+    SET_FREE_STATUS(new SetFreeWorkStatusCommand(new TaxiService(), new TripService()));
 
     private Command command;
 

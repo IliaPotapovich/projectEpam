@@ -5,11 +5,7 @@ public class Router {
     private String page;
     private Type type;
 
-    public static enum Type{
-        FORWARD, REDIRECT;
-    }
-
-    public Router(){
+    public Router() {
     }
 
     public Router(String page, Type type) {
@@ -18,7 +14,7 @@ public class Router {
     }
 
     public String getPage() {
-        if (type.equals(Type.FORWARD)){
+        if (type.equals(Type.FORWARD)) {
             return page;
         }
         return page.substring(1);
@@ -34,5 +30,9 @@ public class Router {
 
     public void setType(Type type) {
         this.type = type;
+    }
+
+    public static enum Type {
+        FORWARD, REDIRECT;
     }
 }

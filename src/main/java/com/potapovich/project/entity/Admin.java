@@ -1,5 +1,6 @@
 package com.potapovich.project.entity;
 
+
 import java.util.Objects;
 
 public class Admin {
@@ -33,11 +34,10 @@ public class Admin {
         this.password = password;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Admin)) return false;
         Admin admin = (Admin) o;
         return Objects.equals(getName(), admin.getName()) &&
                 Objects.equals(getPassword(), admin.getPassword());
@@ -48,7 +48,6 @@ public class Admin {
 
         return Objects.hash(getName(), getPassword());
     }
-
 
     @Override
     public String toString() {

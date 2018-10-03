@@ -1,7 +1,5 @@
 package com.potapovich.project.entity;
 
-import java.time.LocalDateTime;
-import java.util.Calendar;
 import java.util.Objects;
 
 public class Trip {
@@ -19,29 +17,29 @@ public class Trip {
 
 
     public Trip() {
-        }
+    }
 
     public Trip(int tripId, int customerId, String customerName, String customerPhone, int markOfTrip, double price, Taxi taxi, boolean inWay) {
-            this.tripId = tripId;
-            this.customerId = customerId;
-            this.customerName = customerName;
-            this.customerPhone = customerPhone;
-            this.markOfTrip = markOfTrip;
-            this.price = price;
-            this.taxi = taxi;
-            this.inWay = inWay;
-        }
+        this.tripId = tripId;
+        this.customerId = customerId;
+        this.customerName = customerName;
+        this.customerPhone = customerPhone;
+        this.markOfTrip = markOfTrip;
+        this.price = price;
+        this.taxi = taxi;
+        this.inWay = inWay;
+    }
 
-        public int getTripId() {
-            return tripId;
-        }
+    public int getTripId() {
+        return tripId;
+    }
 
-        public void setTripId(int tripId) {
-            this.tripId = tripId;
-        }
+    public void setTripId(int tripId) {
+        this.tripId = tripId;
+    }
 
-        public int getCustomerId() {
-            return customerId;
+    public int getCustomerId() {
+        return customerId;
     }
 
     public void setCustomerId(int customerId) {

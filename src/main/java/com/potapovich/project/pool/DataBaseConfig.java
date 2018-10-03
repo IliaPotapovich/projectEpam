@@ -10,14 +10,10 @@ public class DataBaseConfig {
 
     private static final String CONFIG_PROPERTIES = "configuration";
 
-
     static {
         ResourceBundle prop = ResourceBundle.getBundle(CONFIG_PROPERTIES);
         url = prop.getString("url");
         user = prop.getString("user");
         password = prop.getString("password");
-
-
     }
-
 }

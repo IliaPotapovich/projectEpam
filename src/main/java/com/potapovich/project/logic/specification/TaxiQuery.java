@@ -11,27 +11,17 @@ import java.util.List;
 
 public class TaxiQuery {
 
-    private static final Logger LOGGER = LogManager.getLogger();
-
-
+    /**
+     * The main method of determining entry into certain limits and returning a list of suitable taxi
+     * @return List<Taxi>
+     */
     public List<Taxi> query(Specification specification, List<Taxi> listOfTaxi) {
         List<Taxi> result = new ArrayList<>();
-        System.out.println("llllllliiiiiiiiiiiiiiiiistt  " + listOfTaxi);
-        try {
-            if (listOfTaxi.isEmpty()) {
-                throw new DaoException("List of taxi is empty");
-            }
             for (Taxi taxi : listOfTaxi) {
                 if (specification.specified(taxi)) {
                     result.add(taxi);
                 }
             }
-        } catch (DaoException e) {
-            LOGGER.log(Level.ERROR, "DaoException: " + e.getMessage());
-        }
-        System.out.println("result " + result);
         return result;
     }
-
-
 }

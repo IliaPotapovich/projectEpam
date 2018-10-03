@@ -35,7 +35,9 @@ public class Customer {
     public Customer() {
     }
 
-
+    public Customer(Route route) {
+        this.route = route;
+    }
 
     public Customer(String name, String phoneNumber, Route route) {
         this.name = name;
@@ -173,10 +175,8 @@ public class Customer {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(getId(), getName(), getPhoneNumber(), isBannedStatus(), getDiscountProcent(), getCountOfTrip(), getLogin(), getPassword(), getRoute(), isTripComplete());
     }
-
 
     @Override
     public String toString() {

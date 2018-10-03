@@ -7,6 +7,7 @@ import com.potapovich.project.exception.CommandException;
 import com.potapovich.project.exception.LogicException;
 import com.potapovich.project.localization.MessageManager;
 import com.potapovich.project.logic.TaxiService;
+import com.potapovich.project.validation.DataValidator;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,25 +19,29 @@ public class ChangeDriverPasswordCommand implements Command {
         this.taxiService = taxiService;
     }
 
+    /**
+     * Change taxi driver password
+     * @return Router with type FORWARD
+     * @throws CommandException if LogicException
+     */
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
-
         Router router;
         try {
             String login = request.getParameter(Constant.REG_LOGIN);
             String oldPassword = request.getParameter(Constant.OLD_PASSWORD);
             String newPassword = request.getParameter(Constant.NEW_PASSWORD);
+            if (!DataValidator.validation(Constant.VALID_NAME, login) ||
+                    !DataValidator.validation(Constant.VALID_PASS, oldPassword, newPassword)){
+                return new Router(Constant.PATH_PAGE_START_PAGE, Router.Type.REDIRECT);
+            }
             int driverId = (int) request.getSession().getAttribute(Constant.DRIVER_ID);
-            if (taxiService.changeDriverPassword(login,oldPassword,newPassword, driverId)){
-
-                request.getSession().setAttribute(Constant.TAXI_PASS,newPassword);
-
+            if (taxiService.changeDriverPassword(login, oldPassword, newPassword, driverId)) {
                 request.getSession().setAttribute(Constant.MESS_PASS_CHANGED,
                         new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
                                 getMessage(Constant.MESS_PASS_CHANGED));
                 router = new Router(Constant.PATH_PAGE_TAXI_START_PAGE, Router.Type.FORWARD);
-            }
-            else {
+            } else {
                 request.getSession().setAttribute(Constant.LOGIN_ERROR,
                         new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
                                 getMessage(Constant.LOGIN_ERROR));
@@ -45,7 +50,6 @@ public class ChangeDriverPasswordCommand implements Command {
         } catch (LogicException e) {
             throw new CommandException("ChangeDriverPasswordCommandError ", e);
         }
-
         return router;
     }
 }

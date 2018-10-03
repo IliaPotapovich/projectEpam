@@ -2,7 +2,6 @@ package com.potapovich.project.exception;
 
 public class LogicException extends Exception {
 
-
     public LogicException() {
     }
 

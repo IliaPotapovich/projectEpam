@@ -1,6 +1,5 @@
 package com.potapovich.project.entity;
 
-import java.util.List;
 import java.util.Objects;
 
 public class Taxi {
@@ -11,13 +10,20 @@ public class Taxi {
     private boolean active;
     private boolean free = true;
     private Point taxiLocation;
-    private List<Customer> listOfClients;
-
     private String startWorkDate;
     private String finishWorkDate;
 
 
     public Taxi() {
+    }
+
+    public Taxi(Point taxiLocation) {
+        this.taxiLocation = taxiLocation;
+    }
+
+    public Taxi(int id, Point taxiLocation) {
+        this.id = id;
+        this.taxiLocation = taxiLocation;
     }
 
     public Taxi(TaxiDriver taxiDriver, TaxiCar taxiCar) {
@@ -86,14 +92,6 @@ public class Taxi {
         this.taxiLocation = taxiLocation;
     }
 
-    public List<Customer> getListOfClients() {
-        return listOfClients;
-    }
-
-    public void setListOfClients(List<Customer> listOfClients) {
-        this.listOfClients = listOfClients;
-    }
-
     public String getStartWorkDate() {
         return startWorkDate;
     }
@@ -122,15 +120,13 @@ public class Taxi {
                 Objects.equals(getTaxiDriver(), taxi.getTaxiDriver()) &&
                 Objects.equals(getTaxiCar(), taxi.getTaxiCar()) &&
                 Objects.equals(getTaxiLocation(), taxi.getTaxiLocation()) &&
-                Objects.equals(getListOfClients(), taxi.getListOfClients()) &&
                 Objects.equals(getStartWorkDate(), taxi.getStartWorkDate()) &&
                 Objects.equals(getFinishWorkDate(), taxi.getFinishWorkDate());
     }
 
     @Override
     public int hashCode() {
-
-        return Objects.hash(getId(), getTaxiDriver(), getTaxiCar(), isActive(), isFree(), getTaxiLocation(), getListOfClients(), getStartWorkDate(), getFinishWorkDate());
+        return Objects.hash(getId(), getTaxiDriver(), getTaxiCar(), isActive(), isFree(), getTaxiLocation(), getStartWorkDate(), getFinishWorkDate());
     }
 
     @Override
@@ -142,7 +138,6 @@ public class Taxi {
                 ", active=" + active +
                 ", free=" + free +
                 ", taxiLocation=" + taxiLocation +
-                ", listOfClients=" + listOfClients +
                 ", startWorkDate='" + startWorkDate + '\'' +
                 ", finishWorkDate='" + finishWorkDate + '\'' +
                 '}';

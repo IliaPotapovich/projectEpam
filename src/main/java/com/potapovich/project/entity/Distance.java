@@ -7,6 +7,14 @@ public class Distance {
     private int id;
     private double distance;
 
+    public Distance() {
+    }
+
+    public Distance(int id, double distance) {
+        this.id = id;
+        this.distance = distance;
+    }
+
     public int getId() {
         return id;
     }

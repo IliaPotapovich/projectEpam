@@ -3,8 +3,6 @@ package com.potapovich.project.entity;
 import java.util.Objects;
 
 public class TaxiDriver {
-
-
     private int driverId;
     private String driverName;
     private String driverPassword;
@@ -19,7 +17,6 @@ public class TaxiDriver {
         this.driverName = driverName;
         this.driverPassword = driverPassword;
         this.experience = experience;
-
     }
 
 

@@ -17,12 +17,12 @@ public class FindApropriateTaxi implements Specification {
         this.yEnd = yEnd;
     }
 
+    /**
+     * Determines whether the taxi enters a certain sector of coordinates
+     * @return boolean
+     */
     @Override
     public boolean specified(Taxi taxi) {
-
-        System.out.println("AYYYYYYYYY   " +  taxi.isFree() +" " + taxi.getTaxiLocation().getX() + xStart + taxi.getTaxiLocation().getX() + xEnd +
-                taxi.getTaxiLocation().getY() + yStart + taxi.getTaxiLocation().getY() + yEnd);
-
         return taxi.isFree() && taxi.getTaxiLocation().getX() >= xStart && taxi.getTaxiLocation().getX() <= xEnd &&
                 taxi.getTaxiLocation().getY() >= yStart && taxi.getTaxiLocation().getY() <= yEnd;
     }

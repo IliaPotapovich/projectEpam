@@ -7,6 +7,7 @@ import com.potapovich.project.exception.CommandException;
 import com.potapovich.project.exception.LogicException;
 import com.potapovich.project.localization.MessageManager;
 import com.potapovich.project.logic.UserService;
+import com.potapovich.project.validation.DataValidator;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,6 +19,11 @@ public class ChangeUserPasswordCommand implements Command {
         this.userService = userService;
     }
 
+    /**
+     * Change the user's password in the user's room
+     * @return Router with type FORWARD
+     * @throws CommandException if LogicException
+     */
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
         Router router;
@@ -25,14 +31,16 @@ public class ChangeUserPasswordCommand implements Command {
             String login = request.getParameter(Constant.REG_LOGIN);
             String oldPassword = request.getParameter(Constant.OLD_PASSWORD);
             String newPassword = request.getParameter(Constant.NEW_PASSWORD);
-
-            if (userService.changeUserPassword(login,oldPassword,newPassword)){
+            if (!DataValidator.validation(Constant.VALID_LOGIN, login) ||
+                    !DataValidator.validation(Constant.VALID_PASS, oldPassword, newPassword)){
+                return new Router(Constant.PATH_PAGE_START_PAGE, Router.Type.REDIRECT);
+            }
+            if (userService.changeUserPassword(login, oldPassword, newPassword)) {
                 request.getSession().setAttribute(Constant.MESS_PASS_CHANGED,
                         new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
                                 getMessage(Constant.MESS_PASS_CHANGED));
                 router = new Router(Constant.PATH_PAGE_USER_ROOM, Router.Type.FORWARD);
-            }
-            else {
+            } else {
                 request.getSession().setAttribute(Constant.LOGIN_ERROR,
                         new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
                                 getMessage(Constant.LOGIN_ERROR));

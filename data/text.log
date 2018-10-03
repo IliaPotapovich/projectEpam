@@ -1,2 +1,36 @@
 2018:07-29 23:16:13 [main] ERROR com.potapovich.project.pool.ConnectionPool - SQLException Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 2018:07-29 23:16:35 [main] ERROR com.potapovich.project.pool.ConnectionPool - SQLException Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+2018:10-03 23:33:34 [http-nio-8080-exec-107] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@e90a33
+2018:10-03 23:33:42 [http-nio-8080-exec-108] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.customer.login.EnterInUserRoomCommand@1fb3612
+2018:10-03 23:33:43 [http-nio-8080-exec-109] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.ForwardCommand@125bca0
+2018:10-03 23:35:02 [http-nio-8080-exec-113] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@17f3d3
+2018:10-03 23:35:02 [http-nio-8080-exec-117] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@17f3d3
+2018:10-03 23:35:04 [http-nio-8080-exec-116] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.ForwardCommand@4c9009
+2018:10-03 23:35:05 [http-nio-8080-exec-118] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.customer.login.EnterInUserRoomCommand@504c8
+2018:10-03 23:43:19 [http-nio-8080-exec-158] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@eb40c
+2018:10-03 23:43:20 [http-nio-8080-exec-149] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.ForwardCommand@16bad18
+2018:10-03 23:43:22 [http-nio-8080-exec-153] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.customer.login.EnterInUserRoomCommand@5baa43
+2018:10-03 23:43:22 [http-nio-8080-exec-157] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.customer.login.EnterInUserRoomCommand@5baa43
+2018:10-03 23:45:34 [http-nio-8080-exec-161] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@26db07
+2018:10-03 23:45:39 [http-nio-8080-exec-162] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.customer.login.EnterInUserRoomCommand@1974f5
+2018:10-03 23:45:40 [http-nio-8080-exec-152] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.ForwardCommand@1035802
+2018:10-03 23:45:41 [http-nio-8080-exec-164] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@26db07
+2018:10-03 23:45:41 [http-nio-8080-exec-167] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.ForwardCommand@1035802
+2018:10-03 23:47:10 [http-nio-8080-exec-169] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@26db07
+2018:10-03 23:47:12 [http-nio-8080-exec-171] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.ForwardCommand@1035802
+2018:10-04 00:10:05 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello13
+2018:10-04 00:11:13 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Action11
+2018:10-04 00:11:29 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello21
+2018:10-04 00:16:00 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello21
+2018:10-04 00:16:18 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello21
+2018:10-04 00:16:36 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello21
+2018:10-04 00:20:30 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello21
+2018:10-04 00:21:08 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Action22
+2018:10-04 00:23:21 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Action22
+2018:10-04 00:24:03 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello22
+2018:10-04 00:27:13 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello44
+2018:10-04 00:27:43 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello44
+2018:10-04 00:30:20 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello44
+2018:10-04 00:30:51 [main] INFO  com.potapovich.project.validation.DataValidator - Validation is fail: Hello44
+2018:10-04 00:33:51 [http-nio-8080-exec-2] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.common.ShowListOfWorkingTaxiCommand@2a26d7
+2018:10-04 00:33:54 [http-nio-8080-exec-10] INFO  com.potapovich.project.controller.Controller - Current command com.potapovich.project.command.user.customer.login.EnterInUserRoomCommand@778fa2

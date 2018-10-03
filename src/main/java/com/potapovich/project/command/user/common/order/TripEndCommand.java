@@ -1,7 +1,7 @@
 package com.potapovich.project.command.user.common.order;
 
-import com.potapovich.project.constant.Constant;
 import com.potapovich.project.command.Command;
+import com.potapovich.project.constant.Constant;
 import com.potapovich.project.entity.Router;
 import com.potapovich.project.exception.CommandException;
 import com.potapovich.project.exception.LogicException;
@@ -12,28 +12,29 @@ import javax.servlet.http.HttpServletRequest;
 
 public class TripEndCommand implements Command {
 
-   private TripService tripService;
-   private UserService userService;
+    private TripService tripService;
+    private UserService userService;
 
     public TripEndCommand(TripService tripService, UserService userService) {
         this.tripService = tripService;
         this.userService = userService;
     }
 
+    /**
+     * Confirm the end of the trip and destroy the session while maintaining the required attributes
+     * @return Router with type FORWARD
+     * @throws CommandException if LogicException
+     */
     @Override
-    public Router execute(HttpServletRequest request) throws CommandException{
-
+    public Router execute(HttpServletRequest request) throws CommandException {
         Router router;
         int taxiId;
-
         try {
-            if (request.getSession().getAttribute(Constant.TAXI_ID)!=null) {
+            if (request.getSession().getAttribute(Constant.TAXI_ID) != null) {
                 taxiId = (int) request.getSession().getAttribute(Constant.TAXI_ID);
-            }
-            else {
+            } else {
                 return new Router(Constant.PATH_PAGE_END_TRIP, Router.Type.FORWARD);
             }
-
             int mark = 0;
             if (request.getSession().getAttribute(Constant.TAXI_MARK) != null) {
                 String taxiMark = (String) request.getSession().getAttribute(Constant.TAXI_MARK);
@@ -45,28 +46,22 @@ public class TripEndCommand implements Command {
             }
             tripService.finishTrip(taxiId, mark);
             router = new Router(Constant.PATH_PAGE_END_TRIP, Router.Type.FORWARD);
-
-            int customerId= 0;
-            String customerName="";
-            String customerPhone="";
-            int trip=0;
-            int discount=0;
-
+            int customerId = 0;
+            String customerName = "";
+            String customerPhone = "";
+            int trip = 0;
+            int discount = 0;
             if (request.getSession().getAttribute(Constant.ID) != null) {
                 customerId = (int) request.getSession().getAttribute(Constant.ID);
                 customerName = (String) request.getSession().getAttribute(Constant.NAME);
                 customerPhone = (String) request.getSession().getAttribute(Constant.PHONE);
                 trip = (int) request.getSession().getAttribute(Constant.TRIP);
                 discount = (int) request.getSession().getAttribute(Constant.DISCOUNT);
-
             }
             String language = (String) request.getSession().getAttribute(Constant.LANGUAGE);
-
             request.getSession().invalidate();
-
             request.getSession().setAttribute(Constant.LANGUAGE, language);
             if (customerId != 0) {
-
                 request.getSession().setAttribute(Constant.ID, customerId);
                 request.getSession().setAttribute(Constant.NAME, customerName);
                 request.getSession().setAttribute(Constant.PHONE, customerPhone);

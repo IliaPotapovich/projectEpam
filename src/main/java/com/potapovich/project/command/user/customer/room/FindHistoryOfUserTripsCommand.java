@@ -20,29 +20,30 @@ public class FindHistoryOfUserTripsCommand implements Command {
         this.tripService = tripService;
     }
 
+    /**
+     * Find completed user trips
+     * @return Router with type FORWARD
+     * @throws CommandException if LogicException
+     */
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
         Router router;
-            try {
-                int customerId = (int) request.getSession().getAttribute(Constant.ID);
-                List<Trip> listOfTrips;
-                listOfTrips = tripService.findTripsByUserId(customerId);
-
-                if (!listOfTrips.isEmpty()) {
-                    request.getSession().setAttribute(Constant.TRIPS_LIST, listOfTrips);
-                    router = new Router(Constant.PATH_PAGE_LIST_OF_USER_TRIPS, Router.Type.FORWARD);
-                }
-                else{
-                    request.getSession().setAttribute(Constant.USER_TRIP_LIST_IS_NOT_EXIST,
-                            new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
-                                    getMessage(Constant.USER_TRIP_LIST_IS_NOT_EXIST));
-
-                    router = new Router(Constant.PATH_PAGE_USER_ROOM, Router.Type.FORWARD);
-                }
-            } catch (LogicException e) {
-                throw new CommandException("FindHistoryOfUserTripsError ", e);
+        try {
+            int customerId = (int) request.getSession().getAttribute(Constant.ID);
+            List<Trip> listOfTrips;
+            listOfTrips = tripService.findTripsByUserId(customerId);
+            if (!listOfTrips.isEmpty()) {
+                request.getSession().setAttribute(Constant.TRIPS_LIST, listOfTrips);
+                router = new Router(Constant.PATH_PAGE_LIST_OF_USER_TRIPS, Router.Type.FORWARD);
+            } else {
+                request.getSession().setAttribute(Constant.USER_TRIP_LIST_IS_NOT_EXIST,
+                        new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
+                                getMessage(Constant.USER_TRIP_LIST_IS_NOT_EXIST));
+                router = new Router(Constant.PATH_PAGE_USER_ROOM, Router.Type.FORWARD);
             }
-
+        } catch (LogicException e) {
+            throw new CommandException("FindHistoryOfUserTripsError ", e);
+        }
         return router;
     }
 }

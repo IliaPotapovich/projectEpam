@@ -11,6 +11,11 @@ public class Route {
     public Route() {
     }
 
+    public Route(int id, Point location) {
+        this.id = id;
+        this.location = location;
+    }
+
     public Route(Point location) {
         this.location = location;
     }
@@ -44,6 +49,10 @@ public class Route {
 
     public Point getDestination() {
         return destination;
+    }
+
+    public void setDestination(Point destination) {
+        this.destination = destination;
     }
 
     @Override

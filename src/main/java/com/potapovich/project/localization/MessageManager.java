@@ -1,85 +1,48 @@
 package com.potapovich.project.localization;
 
+import com.potapovich.project.constant.Constant;
+
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class MessageManager {
 
+    /**
+     * A class that allows you send localized messages using the Resource Bundle
+     */
 
     private String sessionLocale;
     private ResourceBundle bundle;
 
-   public MessageManager(String sessionLocale) {
-
+    public MessageManager(String sessionLocale) {
         this.sessionLocale = sessionLocale;
     }
 
-    public void setResourceBundle(String sessionLocale){
-       if (sessionLocale!=null) {
-           if (sessionLocale.equals("be_BY")) {
-               bundle = ResourceBundle.getBundle("messages", new Locale("be", "BY"));
-           }
-           if (sessionLocale.equals("en_US")) {
-               bundle = ResourceBundle.getBundle("messages", new Locale("en", "US"));
-           }
-           if (sessionLocale.equals("ru_RU")) {
-               bundle = ResourceBundle.getBundle("messages", new Locale("ru", "RU"));
-           }
-       }
-       else {
-           bundle = ResourceBundle.getBundle("messages", new Locale("ru", "RU"));
-       }
+    /**
+     * Sets a certain Resource Bundle depending on the required locale
+     * void
+     */
+    private void setResourceBundle(String sessionLocale) {
+        if (sessionLocale != null) {
+            if (sessionLocale.equals("be_BY")) {
+                bundle = ResourceBundle.getBundle(Constant.MESSAGES, new Locale("be", "BY"));
+            }
+            if (sessionLocale.equals("en_US")) {
+                bundle = ResourceBundle.getBundle(Constant.MESSAGES, new Locale("en", "US"));
+            }
+            if (sessionLocale.equals("ru_RU")) {
+                bundle = ResourceBundle.getBundle(Constant.MESSAGES, new Locale("ru", "RU"));
+            }
+        } else {
+            bundle = ResourceBundle.getBundle(Constant.MESSAGES, Locale.getDefault());
+        }
     }
-
-    public String getMessage(String key){
-
-       setResourceBundle(sessionLocale);
+    /**
+     * Gets a certain message from the Resource Bundle by the key
+     * @return String (key of message)
+     */
+    public String getMessage(String key) {
+        setResourceBundle(sessionLocale);
         return bundle.getString(key);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /*   if (sessionLocale!=null) {
-         switch (sessionLocale) {
-             case "be_BY": {
-                 bundle = ResourceBundle.getBundle("messages", new Locale("be", "BY"));
-                 break;
-             }
-
-             case "en_US": {
-                 bundle = ResourceBundle.getBundle("messages", new Locale("en", "US"));
-                 break;
-             }
-             case "ru_RU": {
-                 bundle = ResourceBundle.getBundle("messages", new Locale("ru", "RU"));
-                 break;
-             }
-             default: {
-                 bundle = ResourceBundle.getBundle("messages", new Locale("ru", "RU"));
-                 break;
-             }
-         }
-     }
-     else {
-         bundle = ResourceBundle.getBundle("messages", new Locale("ru", "RU"));
-
-     }
-     */
-
-
 }

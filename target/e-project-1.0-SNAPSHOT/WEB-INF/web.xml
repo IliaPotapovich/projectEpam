@@ -4,6 +4,33 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <error-page>
+    <error-code>403</error-code>
+    <location>/jsp/common/errorpage.jsp</location>
+</error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/common/errorpage.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>414</error-code>
+        <location>/jsp/common/errorpage.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/jsp/common/errorpage.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>504</error-code>
+        <location>/jsp/common/errorpage.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.RuntimeException</exception-type>
+        <location>/jsp/common/errorpage.jsp</location>
+    </error-page>
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
 
     <context-param>
         <param-name>DATABASE_URL</param-name>
@@ -27,7 +54,14 @@
     </listener>
 
 
-
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>

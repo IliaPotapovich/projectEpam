@@ -1,7 +1,7 @@
 package com.potapovich.project.command.taxi;
 
-import com.potapovich.project.constant.Constant;
 import com.potapovich.project.command.Command;
+import com.potapovich.project.constant.Constant;
 import com.potapovich.project.entity.Router;
 import com.potapovich.project.exception.CommandException;
 import com.potapovich.project.exception.LogicException;
@@ -18,21 +18,20 @@ public class FinishWorkCommand implements Command {
         this.taxiService = taxiService;
     }
 
+    /**
+     * Confirmation of the end of the working day for the taxi driver. Excludes visibility in the list of active taxis
+     * @return Router with type FORWARD
+     * @throws CommandException if LogicException
+     */
     @Override
     public Router execute(HttpServletRequest request) throws CommandException {
-
         try {
-            String login = (String) request.getSession().getAttribute(Constant.TAXI_NAME);
-            String password = String.valueOf(request.getSession().getAttribute(Constant.TAXI_PASS));
-            System.out.println("NAME " + login + " PASSWORD " + password);
-
-            if (taxiService.finishTaxiWork(login, password)){
-
+            int driverId = (int) request.getSession().getAttribute(Constant.DRIVER_ID);
+            if (taxiService.finishTaxiWork(driverId)) {
                 request.getSession().setAttribute(Constant.MESS_DRIVER_FINISH_WORK,
                         new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
                                 getMessage(Constant.MESS_DRIVER_FINISH_WORK));
-            }
-            else {
+            } else {
                 request.getSession().setAttribute(Constant.MESS_DRIVER_WORK_WAS_NOT_STARTED,
                         new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
                                 getMessage(Constant.MESS_DRIVER_WORK_WAS_NOT_STARTED));

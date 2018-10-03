@@ -14,41 +14,41 @@ import javax.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
 
-
+/**
+ * Servlet for background loading and also for image uploading special features
+ * Forward to Admin Start Page
+ */
 @WebServlet(urlPatterns = "/uploadBackground")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024
         , maxFileSize = 1024 * 1024 * 5
         , maxRequestSize = 1024 * 1024 * 5 * 5)
 
-
 public class FileDownloadingServlet extends HttpServlet {
 
-        private static final String UPLOAD_DIR = "background";
-        @Override
-        protected void doPost(HttpServletRequest request,
-                              HttpServletResponse response) throws ServletException, IOException {
-            String applicationPath = request.getServletContext().getRealPath("");
-            String uploadFilePath = applicationPath + File.separator + UPLOAD_DIR;
+    private static final String UPLOAD_DIR = "background";
 
-            File fileSaveDir = new File(uploadFilePath);
-            if(!fileSaveDir.exists()){
-                fileSaveDir.mkdirs();
-            }
-
-            for(Part part : request.getParts()) {
-                if (part.getSubmittedFileName() != null && part.getSize()!=0) {
-                    part.write(uploadFilePath + File.separator + part.getSubmittedFileName());
-                    request.getSession().setAttribute(Constant.MESS_BACKGROUND_WAS_UPLOAD,
-                            new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
-                                    getMessage(Constant.MESS_BACKGROUND_WAS_UPLOAD));
-                }
-            }
-            request.getSession().setAttribute(Constant.LANG_PAGE, Constant.PATH_PAGE_ADMIN_START_PAGE);
-            RequestDispatcher dispatcher = request.getRequestDispatcher(Constant.PATH_PAGE_ADMIN_START_PAGE);
-            dispatcher.forward(request,response);
+    @Override
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+        String applicationPath = request.getServletContext().getRealPath("");
+        String uploadFilePath = applicationPath + File.separator + UPLOAD_DIR;
+        File fileSaveDir = new File(uploadFilePath);
+        if (!fileSaveDir.exists()) {
+            fileSaveDir.mkdirs();
         }
-
+        for (Part part : request.getParts()) {
+            if (part.getSubmittedFileName() != null && part.getSize() != 0) {
+                part.write(uploadFilePath + File.separator + part.getSubmittedFileName());
+                request.getSession().setAttribute(Constant.MESS_BACKGROUND_WAS_UPLOAD,
+                        new MessageManager((String) request.getSession().getAttribute(Constant.LANGUAGE)).
+                                getMessage(Constant.MESS_BACKGROUND_WAS_UPLOAD));
+            }
+        }
+        request.getSession().setAttribute(Constant.LANG_PAGE, Constant.PATH_PAGE_ADMIN_START_PAGE);
+        RequestDispatcher dispatcher = request.getRequestDispatcher(Constant.PATH_PAGE_ADMIN_START_PAGE);
+        dispatcher.forward(request, response);
     }
+}
 
 
 
