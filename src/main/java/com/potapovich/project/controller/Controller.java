@@ -30,15 +30,6 @@ import java.util.Optional;
 @WebServlet(urlPatterns = "/controller")
 public class Controller extends HttpServlet {
     private static final Logger LOGGER = LogManager.getLogger();
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        AdminDaoImpl adminDao = new AdminDaoImpl();
-        try {
-            adminDao.createStandartAdmin();
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     public void destroy() {

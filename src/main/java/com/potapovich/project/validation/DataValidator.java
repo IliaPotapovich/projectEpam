@@ -19,6 +19,10 @@ public class DataValidator {
     public static boolean validation(String pattern, String... checkedData) {
         boolean resultOfValidation = false;
         for (String checkedElement : checkedData) {
+            if (checkedElement==null){
+                LOGGER.log(Level.INFO, "Element of validation is null");
+                break;
+            }
             Pattern needed = Pattern.compile(pattern);
             Matcher match = needed.matcher(checkedElement);
             while (match.find()) {
