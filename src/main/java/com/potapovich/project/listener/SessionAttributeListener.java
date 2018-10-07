@@ -30,8 +30,13 @@ public class SessionAttributeListener implements HttpSessionAttributeListener {
                 && !session.isNew()) {
             if (!event.getValue().equals(Constant.PATH_PAGE_REGISTER) &&
                     !event.getValue().equals(Constant.PATH_PAGE_LOGIN) &&
-                    !event.getValue().equals(Constant.PATH_PAGE_TECHNICAL_OFFICE)) {
+                    !event.getValue().equals(Constant.PATH_PAGE_TECHNICAL_OFFICE) &&
+                    !event.getValue().equals(Constant.PATH_PAGE_ADMIN_START_PAGE)) {
                 session.removeAttribute(Constant.REG_SUCCESS);
+            }
+            if (!event.getValue().equals(Constant.PATH_PAGE_LOGIN) &&
+                    !event.getValue().equals(Constant.PATH_PAGE_TECHNICAL_OFFICE) &&
+                    !event.getValue().equals(Constant.PATH_PAGE_ADMIN_START_PAGE)) {
                 session.removeAttribute(Constant.ERROR_LOGIN_PASS_MESSAGE);
                 session.removeAttribute(Constant.MESS_YOU_ARE_BLOCKED);
             }
@@ -96,7 +101,6 @@ public class SessionAttributeListener implements HttpSessionAttributeListener {
                     !event.getValue().equals(Constant.PATH_PAGE_TRIP_FIND) &&
                     !event.getValue().equals(Constant.PATH_PAGE_USER_ROOM) &&
                     !event.getValue().equals(Constant.PATH_PAGE_MAIN)) {
-               // session.removeAttribute(Constant.CAR_ID_ERROR_MESSAGE);
                 session.removeAttribute(Constant.REG_DRIVER_EXIST);
                 session.removeAttribute(Constant.MESS_AVATAR_IS_CHANGED);
                 session.removeAttribute(Constant.TRIP_LIST_IS_NOT_EXIST);

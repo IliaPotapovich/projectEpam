@@ -11,7 +11,7 @@
 
 <br/><br/>
                     <h2><fmt:message key="login.greetings" bundle="${rb}"/></h2>
-                <h3><fmt:message key="main.hello" bundle="${rb}"/> ${user} <fmt:message key="main.hello2" bundle="${rb}"/></h3>
+                <h3><fmt:message key="main.hello" bundle="${rb}"/> ${name} <fmt:message key="main.hello2" bundle="${rb}"/></h3>
 <br/><br/>
               <div class="container">
                 <div class="row">

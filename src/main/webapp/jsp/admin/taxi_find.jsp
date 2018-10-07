@@ -156,7 +156,7 @@
     <div class="col-9">
 
  ${driverIsNotExist}
- ${deleteSuccessfully}<br/>
+ <i>${deleteSuccessfully}</i><br/>
 <form name="deleteDriverById" action="${request.getContextPath}/project/controller" method="post">
  <input type="hidden" name="command" value="delete_driver_by_id"/>
 
@@ -188,7 +188,6 @@
     </div>
     <div class="col-9">
 
- ${deleteSuccessfully}
  ${carIsNotExist}<br/>
 <form name="deleteCarById" action="${request.getContextPath}/project/controller" method="post">
  <input type="hidden" name="command" value="delete_car_by_id"/>

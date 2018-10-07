@@ -14,7 +14,7 @@
             <form name="enterInUserRoom" id="showTaxiForm" action="${request.getContextPath}/project/controller" method="post" >
               <a class="navbar-brand" href="javascript:;" onclick="parentNode.submit();">
                    <input type="hidden" name="command" value="forward"/>
-                   <input type="hidden" name="page" value="/jsp/user/login.jsp"/>
+                   <input type="hidden" name="page" value="/jsp/common/login.jsp"/>
                 <img src="${request.getContextPath}/project/background/back.png?auto=yes&bg=555&fg=333&text=First slide" width="120" height="120" alt="">
               </a>
               </form>

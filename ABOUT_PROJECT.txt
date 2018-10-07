@@ -1,0 +1,68 @@
+-- Taxi service.
+-- Description of the subject area.
+-- Taxi service provides transportation services to customers. Each particular carrier is a driver, and has one or more cars.
+-- Each car has its own personal number, brand (model), year of manufacture and owner identification number.
+-- Each driver has his identification number, name, a certain amount of experience (experience) and information about the driver's activity (is there a ban, is it active at the moment, or is busy or not working)
+-- Our clients are various individuals and each has their own personal identification number, which can be easily traced to his trips.
+-- We collect some information about each client (name and phone number) with which we can find the client in the database and find out if there is a bank on the client, the discount amount and the total number of trips.
+-- We also collect information about the trips themselves, where each trip has its own identification number knowing that we can find out who was or is (if the trip is being performed now) by the driver and the client (by identification numbers), as well as the price of the trip and status result (whether it is executed, completed and paid, or completed and not paid)
+
+In the project you have the opportunity to make an order in three different ways:
+1) Fast order:
+It is necessary to enter the phone number, name and place of landing. Destination can be entered as desired.
+If the destination is entered, the cost of the trip will be calculated, the length of the route will be calculated and the estimated time required for the trip will be calculated.
+2) With the choice of a taxi and calculation:
+It is necessary to enter the phone number, name, place of landing and destination.
+Next will be calculated the cost of the trip, the calculation of the length of the route and the calculation of the estimated time required for the trip.
+3) Using a personal account:
+You must enter your personal account and then enter only the landing site.
+You can also enter (if you wish) a destination and then the calculation of the cost of the trip, the calculation of the length of the route and the calculation of the approximate time required for the trip will be made.
+The number of trips can be seen in your account as well as the total discount percentage.
+
+
+Also in the administrator’s office (by entering through the technical office) we can do a lot of actions we need. For example, create a taxi driver and a taxi car,
+create other administrators, remove taxi drivers and their cars, perform various searches (taxis, drivers, cars, trips, users) by name or personal number,
+view remote drivers and cars in the archive, etc ..
+Also in the administrator’s office we can change the design of the site (background and carousel).
+
+At the beginning of the shift, taxi drivers themselves choose a car in their personal account (by logging in through the technical office), they can see the history of their trips, change their password, refuse a current order,
+complete the current working day, etc ..
+
+In the personal account, the user can perform a taxi order, view personal data, travel history and change the password.
+
+Attached 3 languages: Russian, Belarusian and English. You can change languages ​​from any page.
+
+
+
+-- Служба такси.
+-- Описание предметной области.
+-- Служба такси предоставляет услуги перевозки клиентов.
+-- Каждый конкретный перевозчик является водителем, и имеет один или несколько автомобилей.
+-- Каждый автомобиль имеет свой личный номер, марку(модель), год выпуска и идентификационный номер владельца.
+-- Каждый водитель имеет свой идентификационный номер, имя, определенное количество опыта(стаж) и информация о активности водителя (есть ли бан, активен ли на данный момент либо занят или не работает).
+-- Нашими клиентами являются различные лица и каждый имеет свой личный идентификационный номер, по которому легко можно отследить его поездки. Мы собираем некоторую информацию о каждом клиенте (имя и номер телефона) с помощью которой мы можем найти клиента в базе данных и узнать есть ли на клиенте бан, размер скидки и общее количество поездок.
+-- Так же мы собираем информацию о самих поездках, где у каждой поездки есть свой идентификационный номер зная который мы можем выяснить,  кто был или есть(если поездка выполняется сейчас) водителем и клиентом(по идентификационным номерам), а так же цену поездки и статус-результат(выполняется ли сейчас, окончена и оплачена либо окончена и не оплачена)
+
+В проекте у вас есть возможность сделать заказ тремя разными способами:
+1) Быстрый заказ:
+Необходимо обязательно ввести номер телефона, имя и место посадки. Пункт назначения можно вводить по желанию.
+Если пункт назначения введен то будет произведен расчет стоимости поездки, расчет длинны маршрута и расчет примерного времени необходимого на поездку.
+2) С выбором такси и расчетом:
+Необходимо обязательно ввести номер телефона, имя, место посадки и пункт назначения.
+Далее будет произведен расчет стоимости поездки, расчет длинны маршрута и расчет примерного времени необходимого на поездку.
+3) С помощью личного кабинета:
+Необходимо войти в личный кабинет и далее ввести только место посадки.
+Так же можно ввести (по желанию) пункт назначения и далее будет произведен расчет стоимости поездки, расчет длинны маршрута и расчет примерного времени необходимого на поездку.
+Количество поездок можно увидеть в личном кабинете так же как и общий процент скидки.
+
+Так же в кабинете администратора (войдя через технический кабинет) мы можем сделать множество необходимых нам действий. К примеру создать таксиста и автомобиль такси,
+создать других администраторов, удалить водителей такси и их автомобили, выполнить различный поиск(такси, водители, автомобили, поездки, пользователи) по имени или личному номеру,
+просмотреть удаленных водителей и автомобили в архиве и т.д..
+Так же в кабинете администратора мы можем изменить оформление сайта (фон и карусель).
+
+Таксисты в начале смены сами выбирают себе автомобиль в личном кабинете (войдя через технический кабинет), могут посмотреть историю своих поездок, сменить пароль, отказаться от текущего заказа,
+завершить текущий рабочий день и т.д..
+
+В личном кабинете пользователь может выполнить заказ такси, посмотреть личные данные, историю поездок и изменить пароль.
+
+В приложении 3 языка: русский, белорусский и английский. Менять языки можно с любой страницы.

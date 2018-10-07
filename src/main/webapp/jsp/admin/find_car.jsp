@@ -32,7 +32,7 @@
       <th scope="col"><fmt:message key="privateNumberOfCar" bundle="${ rb }"/></th>
       <th scope="col"><fmt:message key="foto" bundle="${ rb }"/></th>
       <th scope="col"><fmt:message key="registr.carModel" bundle="${ rb }"/></th>
-      <th scope="col"><fmt:message key="registr.ownerId" bundle="${ rb }"/></th>
+      <th scope="col"><fmt:message key="ownerId" bundle="${ rb }"/></th>
       <th scope="col"><fmt:message key="registr.yearOfManuf" bundle="${ rb }"/></th>
     </tr>
   </thead>

@@ -31,6 +31,7 @@ import java.util.Optional;
 public class Controller extends HttpServlet {
     private static final Logger LOGGER = LogManager.getLogger();
 
+
     @Override
     public void destroy() {
         ConnectionPool.getInstance().releasePool();
@@ -49,7 +50,6 @@ public class Controller extends HttpServlet {
             Command command = commandOptional.orElse(new EmptyCommand());
             Router router = command.execute(req);
             req.getSession().setAttribute(Constant.LANG_PAGE, router.getPage());
-          //  LOGGER.log(Level.INFO, "Current page " + req.getSession().getAttribute(Constant.LANG_PAGE));
             LOGGER.log(Level.INFO, "Current command " + command);
             if (Router.Type.FORWARD.equals(router.getType())) {
                 if (req.getSession().getAttribute(Constant.REDIRECTED_PAGE) != null) {

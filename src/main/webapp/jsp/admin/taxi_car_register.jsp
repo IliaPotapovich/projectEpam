@@ -41,7 +41,7 @@
             <span class="input-group-text" id="inputGroup-sizing-lg"><fmt:message key="registr.carModel" bundle="${ rb }"/></span>
           </div>
 
-         <input type="text" name="regCarModel" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" pattern="([A-Za-zА-Яа-я0-9]{3,30})" placeholder=<fmt:message key="from3to30" bundle="${ rb }"/> required/><br/>
+         <input type="text" name="regCarModel" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" pattern="([ A-Za-zА-Яа-я0-9]{3,30})" placeholder=<fmt:message key="from3to30" bundle="${ rb }"/> required/><br/>
         </div>
         <br/>
 

@@ -221,7 +221,7 @@ public class Constant {
      * Regular expressions for server validation
      */
     public static String VALID_NAME = "([A-Za-zА-Яа-я]{3,15})";
-    public static String VALID_CAR_NAME = "([A-Za-zА-Яа-я0-9]{3,30})";
+    public static String VALID_CAR_NAME = "([A-Za-zА-Яа-я0-9\\s]{3,30})";
     public static String VALID_LOGIN = "([A-Za-zА-Яа-я0-9]{3,15})";
     public static String VALID_PASS = "([A-Za-zА-Яа-я0-9]{3,15})";
     public static String VALID_PHONE = "([+0-9]{1,13})";
