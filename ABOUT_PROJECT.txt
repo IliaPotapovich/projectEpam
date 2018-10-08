@@ -8,10 +8,10 @@
 -- We also collect information about the trips themselves, where each trip has its own identification number knowing that we can find out who was or is (if the trip is being performed now) by the driver and the client (by identification numbers), as well as the price of the trip and status result (whether it is executed, completed and paid, or completed and not paid)
 
 In the project you have the opportunity to make an order in three different ways:
-1) Fast order:
+1) Fast order(guest mode):
 It is necessary to enter the phone number, name and place of landing. Destination can be entered as desired.
 If the destination is entered, the cost of the trip will be calculated, the length of the route will be calculated and the estimated time required for the trip will be calculated.
-2) With the choice of a taxi and calculation:
+2) With the choice of a taxi and calculation(guest mode):
 It is necessary to enter the phone number, name, place of landing and destination.
 Next will be calculated the cost of the trip, the calculation of the length of the route and the calculation of the estimated time required for the trip.
 3) Using a personal account:
@@ -44,10 +44,10 @@ Attached 3 languages: Russian, Belarusian and English. You can change languages 
 -- Так же мы собираем информацию о самих поездках, где у каждой поездки есть свой идентификационный номер зная который мы можем выяснить,  кто был или есть(если поездка выполняется сейчас) водителем и клиентом(по идентификационным номерам), а так же цену поездки и статус-результат(выполняется ли сейчас, окончена и оплачена либо окончена и не оплачена)
 
 В проекте у вас есть возможность сделать заказ тремя разными способами:
-1) Быстрый заказ:
+1) Быстрый заказ(режим гостя):
 Необходимо обязательно ввести номер телефона, имя и место посадки. Пункт назначения можно вводить по желанию.
 Если пункт назначения введен то будет произведен расчет стоимости поездки, расчет длинны маршрута и расчет примерного времени необходимого на поездку.
-2) С выбором такси и расчетом:
+2) С выбором такси и расчетом(режим гостя):
 Необходимо обязательно ввести номер телефона, имя, место посадки и пункт назначения.
 Далее будет произведен расчет стоимости поездки, расчет длинны маршрута и расчет примерного времени необходимого на поездку.
 3) С помощью личного кабинета:
